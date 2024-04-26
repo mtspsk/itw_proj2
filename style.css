@@ -74,6 +74,37 @@
    }
 }
 
+@media (max-device-width: 920px) {
+   #about_me{
+      width: 95%;
+   }
+   #education{
+      width: 95%;
+   }
+   .basic-grid{
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      padding: 5%;
+   }
+   .card{
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      min-height: 300px;
+   }
+   #unity{
+      width: 95%;
+   }
+   .scroll{
+      display: none;
+   }
+}
+
+
 #myDropdown{
    display: none;
 }
