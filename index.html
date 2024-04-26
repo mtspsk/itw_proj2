@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/a61e2f8ac7.js" crossorigin="anonymous"></script>
+   <script defer src="script.js"></script>
+   <title>
+      My Portfolio
+   </title>
+</head>
+
+<body>
+   <header>
+      <div id = "navbar-container">
+         <div id="my_profile">
+            <i class="fa-solid fa-user fa-lg" style="color: #9899a1;"></i>
+            <h3>Matus Paska</h3>
+         </div>
+         <nav class="navbar">
+            <ul>
+               <li id="special">
+                  <button class="dropbtn"><i class="fa-solid fa-bars fa-2xl" style="color: #9899a1;"></i></button>
+               </li>
+               <li id="about_nav" class="scroll"><a>About_me</a><a class="parathesies">()</a></li>
+               <li id="edu_nav" class="scroll"><a>Education</a><a class= "parathesies">()</a></li>
+               <li id="exp_nav" class="scroll"><a>Experience</a><a class="parathesies">()</a></li>
+               <li id="contact_nav" class="scroll"><a>Contact</a><a class="parathesies">()</a></li>
+            </ul>
+         </nav>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+         <a id="about_dropdown" class="scroll">About me</a>
+         <a id="edu_dropdown" class="scroll">Education</a>
+         <a id="exp_dropdown" class="scroll">Experience</a>
+         <a id="contact_dropdown" class="scroll">Contact</a>
+      </div>
+      <div id="navbar-smoothener"></div>
+      <div id="header-container">
+         <h1 class="hidden-bottom">Welcome to my portfolio website</h1>
+         <h3 class="hidden-bottom">keep scrolling if you want to learn more about me &#x1F447;</h3>
+      </div>
+      <div id="prechod-header"></div>
+   </header>
+
+   <div id="background-aboutme">
+
+   <h2 id="about-me-heading" class="hidden-bottom">About me</h2>
+   <section id="about_me" class="hidden-bottom highlightable">
+      <div id="container-for-circular-image">
+         <div class="circular-image">
+            <img src="images/about_me/albania-648.jpg" alt="Picture of me">
+         </div>
+      </div>
+      <div id="about-me-paragraph">
+         <p>
+            I am currently studying computer science at the University of Technology in Brno &#x1F1E8;&#x1F1FF;.
+            During the semester, I spend most of my time in Brno, but during the summer,
+            you can meet me in Trencin &#x1F1F8;&#x1F1F0;. I love sports, and my favorites are Football ⚽
+            and Formula 1. If you want to collaborate with me on some cool projects or just want to hang out,
+            feel free to contact me on any of my socials&#x1F447;.
+         </p>
+      </div>
+      <div class="clearfix"></div>
+   </section>
+   </div>
+
+   <div id="prechod-about-education"></div>
+
+   <div id="Edu-background">
+      <h2 id="edu-heading" class="hidden-bottom">Education</h2>
+      <section id="education" class="hidden-bottom highlightable">
+         <h3>High school</h3>
+         <div id="High-school">
+            <div id="High-school-paragraph">
+               <p>From 2014 to 2022 I studied at Piaristicke Gymanzium Jozefa Braneckeho v Trencine.</p>
+            </div>
+            <div id="PGJB-image-container">
+               <img src="images/education/logo-pgjb.png" alt="Logo Piaristicke Gymanzium Jozefa Braneckeho">
+            </div>
+         </div>
+         <h3>University</h3>
+         <div id="University">
+            <div id="University-image-container">
+               <img src="images/education/vut-fit.png" alt="Logo VUT FIT">
+            </div>
+            <div id="Uni-paragraph">
+               <p>Since 2022 Iam studying at the University of Technology Faculty of Information Technology in Brno. Iam currently
+                  in the second year of my bachelors degree and Iam on track to finish my bachelors
+                  degree in 2025😎.
+               </p>
+            </div>
+         </div>
+      </section>
+   </div>
+
+   <div id="prechod-edu-experience"></div>
+
+
+   <div id="experience-background">
+      <h2 id="exp-heading" class="hidden-bottom">Experience & Projects</h2>
+      <section id="experience">
+         <section class="basic-grid">
+            <div id="c-cpp" class="card hidden-left highlightable">
+                  <div id="c-container" class="image-container">
+                     <img src="images/experience/c-cpp.png" alt="C/C++ logo">
+                  </div>
+                  <div id="c-paragraph">
+                     <p>
+                        C and C++ are one of my favorite languages. I have created many 
+                        projetcs in these languages over the years but my favorites were.
+                     </p>
+                     <ul>
+                        <li>Compiler for language Swift(C)</li>
+                        <li>Packet sniffer(C++)</li>
+                        <li>Client side of server communication(C++)</li>
+                     </ul>
+                  </div>
+            </div>
+            <div id="java" class="card hidden-left highlightable">
+                  <div id="java-container" class="image-container">
+                     <img src="images/experience/java.png" alt="Java logo">
+                  </div>
+                  <div id="java-paragraph">
+                     <p>Iam currently learning Java and Iam trying to 
+                        craete a 2D robot simulation. Heres how it looks so far👇.
+                     </p>
+                  </div>
+                  <div id="robot-container" class="image-container">
+                     <img src="images/experience/robot-simulation.png" alt="Picture of robot simulation project">
+                  </div>
+            </div>
+            <div id="sql" class="card hidden-left highlightable">
+                  <div id="sql-container" class="image-container">
+                     <img src="images/experience/sql.png" alt="Sql logo">
+                  </div>
+                  <div id="SQL-paragraph">
+                     <p>
+                        So far I have created a database for a costume rental shop and I really enjoyed
+                        it. I plan on creating more projects in SQL in the near future.
+                     </p>
+                  </div>
+            </div>
+            <div id="Python-PHP" class="card hidden-left highlightable">
+                  <div id="python-php-container" class="image-container">
+                     <img src="images/experience/python-php.png" alt="Python and Php logo">
+                  </div>
+                  <div id="calculator-container" class="image-container">
+                     <img src="images/experience/calculator.png" alt="Screenshot of my calculator">
+                  </div>
+                  <div id="python-paragraph">
+                     <p>I have created many projects in these script languages but
+                        the ones where i learned the most were:
+                     </p>
+                     <ul>
+                        <li>My very own calculator(Python)👆</li>
+                        <li>PDF-to-Website Data Automation Project(Python)</li>
+                        <li>An interpreter for a assembly language(PHP)</li>
+                     </ul>   
+                  </div>
+                </div>
+         </section>
+            
+         <div id="unity" class="hidden-bottom highlightable">
+            <div id="unity-logo-container" class="image-container">
+               <img src="images/experience/unity.png" alt="Unity logo">
+            </div>
+            <div id="unity-paragraph">
+               <p>Im also intersted in game developlment and i recently created a game with my friend
+                  using Unity that was insipired by Age of War.
+               </p>
+               
+            </div>
+            <div id="unity-game-image" class="image-container">
+               <img src="images/experience/unity-game.png" alt="Screenshot of my game">
+            </div>
+         </div>
+      </section> 
+   </div>
+
+   <footer>
+   <div id="prechod-exp-contact"></div>
+   <h2 class="hidden-bottom">Contact</h2>
+      <section id="contact" class="hidden-bottom">
+         <div id="footer-paragraph">
+            <p>If you are interested in collaborating on some projects with 
+               or just want to want to get to know me feel free to contact me on
+               any of my socials.
+            </p>
+         </div>
+         <div id="footer-icons">
+            <a href="https://www.linkedin.com/in/mat%C3%BA%C5%A1-pa%C5%A1ka-64a51925b" target="_blank">
+               <i class="fa-brands fa-linkedin fa-lg"></i>
+            </a>
+            <a href="https://github.com/mtspsk" target="_blank">
+               <i class="fa-brands fa-github fa-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/m_paska" target="_blank">
+               <i class="fa-brands fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100005664107934" target="_blank">
+               <i class="fa-brands fa-facebook fa-lg"></i>
+            </a>
+         </div>
+      </section>
+   </footer>
+</body>
+</html>

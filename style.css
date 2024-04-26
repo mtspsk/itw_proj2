@@ -1,0 +1,711 @@
+*{
+   font-family: "Roboto", 'Times New Roman', Times, serif;
+   margin: 0;
+   padding: 0;
+
+}
+
+#header-container{
+   background-color: #00246B;
+   width: 100%;
+   margin: auto;
+   margin-top: 80px;
+
+}
+
+@media (min-width: 920px) {
+   #about_me{
+      width: 60%;
+   }
+   #education{
+      width: 60%;
+   }
+   .basic-grid{
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 5%;
+   }
+   
+   .card{
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+   }
+
+   #unity{
+      width: 65%;
+   }
+   #special{
+      display: none;
+   }
+}
+
+@media (max-width: 920px) {
+   #about_me{
+      width: 95%;
+   }
+   #education{
+      width: 95%;
+   }
+   .basic-grid{
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      padding: 5%;
+   }
+   .card{
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      min-height: 300px;
+   }
+   #unity{
+      width: 95%;
+   }
+   .scroll{
+      display: none;
+   }
+}
+
+#myDropdown{
+   display: none;
+}
+
+.dropbtn{
+   background-color: #001824;
+   height: 50px;
+   width: 50px;
+   border: none;
+   float: right;
+   cursor: pointer;
+   width: 100%;
+}
+
+.dropdown-content{
+   position: fixed;
+   height: 300px;
+   top: 60px;
+   z-index: 99999;
+   width: 100%;
+}
+
+.dropdown-content a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   float: left;
+   width: 100%;
+   height: 25%;
+   background-color: #001824;
+   font-size: 50px;
+   text-decoration: none;
+   color: #8ab6f9;
+}
+
+.dropdown-content a:hover{
+   background-color: #002a80;
+   color: orange;
+}
+
+#header-container h1{
+   padding-top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+   text-align: center;
+   color: rgb(241, 173, 24);
+   font-size: 45px;
+}
+
+#header-container h3{
+   color: rgb(241, 173, 24);
+   padding-top: 15px;
+   text-align: center;
+   padding-bottom: 30px;
+   font-size: 15px;
+}
+
+#prechod-header{
+   aspect-ratio: 900/100;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-image: url(images/bg/wave-header.svg);
+}
+
+.navbar{
+   width: 60%;
+   margin-right: 10px;
+   z-index: 100;
+}
+
+.navbar ul{
+   list-style: none;
+   float: right;
+}
+
+.navbar li a{
+   text-decoration: none;
+   color: rgb(0, 115, 223);
+}
+
+.navbar li a.parathesies{
+   text-decoration: none;
+   color: rgb(201, 223, 243);
+}
+
+.navbar li a:hover{
+   color: rgb(172, 206, 236);
+   cursor: pointer;
+}
+
+.navbar li:hover .parathesies{
+   color: rgb(238, 241, 29);
+   cursor: pointer;
+}
+
+.navbar ul li{
+   float: left;
+   padding-right: 10px;
+}
+
+#navbar-container{
+   position: fixed;
+   top: 0;
+   display: flex; /* Use flexbox */
+   padding-top: 10px;
+   height: 50px;
+   background-color: #001824;
+   width: 100%;
+   z-index: 9999;
+}  
+
+#my_profile{
+   width: 40%;
+   display: flex; /* Use flexbox */
+   margin-left: 10px;
+}
+
+#my_profile h3{
+   margin-left: 10px; /* Add some space between the icon and the heading */
+   color: rgb(160, 192, 220);
+}
+
+#my_profile i{
+   margin-left: 10px;
+   padding-top: 10px;
+}
+
+#navbar-smoothener{
+   position: fixed;
+   display: flex;
+   width: 100%;
+   height: 20px;
+   top: 60px;
+   background: #001824;
+   opacity: 90%;
+   z-index: 9999;
+}
+
+h2{
+   color: rgb(241, 173, 24);
+   margin: auto;
+   text-align: center;
+   padding: 20px;
+   font-size: 40px;
+}
+
+#background-aboutme{
+   width: 100%;
+   background-color: #8ab6f9;
+}
+
+body{
+   background-color: #00246B;
+}
+
+#about_me{
+   display: flex;
+   justify-content: center; /* Horizontally center */
+   align-items: center; /* Vertically center */
+   margin: auto;
+   border-radius: 15px;
+   background: linear-gradient(to right, rgb(37, 37, 37), rgb(56, 52, 44), rgb(63, 63, 63));
+   position: relative;
+}
+
+.circular-image {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.circular-image img {
+   width: 100%;
+   height: auto;
+   margin-top: 25px;
+}
+
+#container-for-circular-image{
+   display: block;
+   width: 40%;
+   height: 100%;
+   float: left;
+   padding: 20px;
+   margin: 20px;
+}
+
+#about-me-paragraph{  
+   padding: 20px;
+   margin: 20px;
+   color: rgba(238, 183, 116, 0.832);
+   font-size: 17px;
+   font-weight: 500;
+   word-spacing: 1px;
+   letter-spacing: 1px;
+}
+
+.clearfix {
+   clear: both;
+}
+
+.content-split{
+   height: 50px;
+}
+
+#prechod-about-education{
+   aspect-ratio: 960/200;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-image: url(images/bg/aboutme-education-transition-wave.svg);
+}
+
+#Edu-background{
+   background-color: #00246B;
+}
+
+#education{
+   margin-top: 50px;
+   display: block;
+   margin: auto;
+   border-radius: 15px;
+   background: linear-gradient(to right, rgb(37, 37, 37), rgb(56, 52, 44), rgb(63, 63, 63));
+}
+
+#education h3{
+   font-size: 35px;
+   padding: 10px;
+   color: aliceblue;
+   text-align: center;
+}
+
+#High-school{
+   display: flex;
+   height: 100%;
+   color: rgba(169, 255, 205, 0.832);
+   font-size: 19px;
+   font-weight: 500;
+   word-spacing: 1px;
+   letter-spacing: 1px;
+}
+
+#PGJB-image-container{
+   flex: 40%;
+   align-self: center;
+   margin: 10px;
+   max-width: 200px;
+}
+
+#PGJB-image-container img{
+   width: 100%;
+   height: auto; 
+}
+
+#High-school-paragraph{
+   flex: 60%;
+   align-self: center;
+   margin-left: 10px;
+   padding: 10px;
+}
+
+#University{
+   display: flex;
+   height: 100%;
+   color: rgb(232, 255, 169);
+   font-size: 19px;
+   font-weight: 500;
+   word-spacing: 1px;
+   letter-spacing: 1px;
+   padding: 10px;
+}
+
+#University-image-container{
+   flex: 40%;
+   align-self: center;
+   margin: 10px;
+}
+
+#University-image-container img{
+   width: 100%;
+   height: auto;
+}
+
+#Uni-paragraph{
+   flex: 60%;
+   align-self: center;
+   margin-left: 10px;
+   padding: 10px;
+}
+
+#prechod-edu-experience{
+   aspect-ratio: 960/200;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-image: url(images/bg/edu-experience-transition-wave.svg);
+}
+
+#experience-background{
+   background-color: #8ab6f9;
+}
+
+#experience{
+   padding-bottom: 1px;
+}
+
+.highlightable:hover::before{
+   opacity: 1;
+}
+
+.highlightable::before{
+   background: radial-gradient(
+   300px circle at var(--mouse-x) var(--mouse-y), 
+   rgba(255, 255, 255, 0.09), transparent 60%);
+   border-radius: inherit;
+   content: "";
+   height: 100%;
+   left: 0px;
+   opacity: 0;
+   position: absolute;
+   top: 0px;
+   transition: opacity 500ms;
+   width: 100%;
+   z-index: 10;
+}
+
+.image-container{
+   display: block;
+   width: 100px;
+}
+
+.image-container img{
+   width: 100%; /* Make the image fill the circular container */
+   height: auto; /* Maintain aspect ratio */
+}
+
+#c-cpp{
+   height: 100%;
+   color: rgb(232, 255, 169);
+   font-size: 19px;
+   font-weight: 500;
+   word-spacing: 1px;
+   letter-spacing: 1px;
+   background: linear-gradient(to right, rgb(37, 37, 37), rgb(56, 52, 44), rgb(63, 63, 63));
+}
+
+#c-container{
+   display: flex;
+   width: 40%;
+   height: 100%;  
+   float: left;
+   align-items: center;
+}
+
+#c-paragraph{
+   float: left;
+   width: 60%;
+   height: 100%;
+}
+
+#c-paragraph p{
+   padding: 40px;
+   padding-bottom: 20px;
+}  
+
+#c-paragraph ul{
+   padding: 40px;
+}
+
+#java{
+   height: 100%;
+   color: rgb(232, 255, 169);
+   font-size: 19px;
+   font-weight: 500;
+   word-spacing: 1px;
+   letter-spacing: 1px;
+   background: linear-gradient(to right, rgb(37, 37, 37), rgb(56, 52, 44), rgb(63, 63, 63));
+}
+
+#java-container{
+   display: flex;
+   width: 35%;
+   height: 50%;  
+   float: left;
+   align-items: center;
+   justify-content: center;
+}
+
+#java-container img{
+   max-width: 100px;
+}
+
+#robot-container{
+   display: flex;
+   width: 100%;
+   height: 50%;  
+   float: left;
+   align-items: center;
+   justify-content: center;
+}
+
+#robot-container img{
+   width: 90%;
+   height: 90%;
+   max-width: 250px;
+}
+
+#java-paragraph{
+   display: flex;
+   float: left;
+   width: 65%;
+   height: 50%;
+   justify-content: center;
+   align-items: center;
+}
+
+#sql{
+   height: 100%;
+   color: rgb(232, 255, 169);
+   font-size: 19px;
+   font-weight: 500;
+   word-spacing: 1px;
+   letter-spacing: 1px;
+   background: linear-gradient(to right, rgb(37, 37, 37), rgb(56, 52, 44), rgb(63, 63, 63));
+}
+
+#sql-container{
+   display: flex;
+   width: 40%;
+   height: 100%;  
+   float: left;
+   align-items: center;
+   justify-content: center;
+}
+
+#sql-container img{
+   width: 90%;
+}
+
+#SQL-paragraph{
+   float: left;
+   width: 60%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#SQL-paragraph p{
+   padding-left: 10px;
+}
+
+#Python-PHP{
+   height: 100%;
+   color: rgb(232, 255, 169);
+   font-size: 19px;
+   font-weight: 500;
+   word-spacing: 1px;
+   letter-spacing: 1px;
+   background: linear-gradient(to right, rgb(37, 37, 37), rgb(56, 52, 44), rgb(63, 63, 63));
+}
+
+#python-php-container{
+   display: flex;
+   width: 35%;
+   height: 50%;  
+   float: left;
+   align-items: center;
+   justify-content: center;
+}
+
+#calculator-container{
+   display: flex;
+   width: 60%;
+   height: 50%;  
+   float: left;
+   align-items: center;
+   justify-content: center;
+}
+
+#python-paragraph{
+   float: left;
+   width: 100%;
+   height: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#calculator-container img{
+   width: 90%;
+   height: 90%;
+   max-height: 170px;
+}
+
+#python-paragraph p{
+   padding: 10px;
+}
+
+#unity{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   color: rgb(232, 255, 169);
+   font-size: 19px;
+   font-weight: 500;
+   word-spacing: 1px;
+   letter-spacing: 1px;
+   background: linear-gradient(to right, rgb(37, 37, 37), rgb(56, 52, 44), rgb(63, 63, 63));
+   border-radius: 12px;
+   margin: auto;
+   margin-top: 30px;
+}
+
+#unity-logo-container{
+   display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+}
+
+#unity-logo-container img{
+   width: 90%;
+   height: 90%;
+   max-height: 150px;
+   max-width: 280px;
+}
+
+#unity-paragraph{
+   display: flex;
+   align-items: center;
+}
+
+#unity-paragraph p{
+   padding: 10px;
+}
+
+#unity-game-image{
+   width: 100%;
+   grid-column: span 2;
+   grid-row: span 2;
+   display: flex;
+   justify-content: center;
+}
+
+#unity-game-image img{
+   padding: 20px;
+   border-radius: 30px;
+   width: 90%;
+   max-height: 450px;
+   max-width: 700px;
+}
+
+footer{
+   background-color: #002a80
+}
+
+#prechod-exp-contact{
+   aspect-ratio: 960/200;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-image: url(images/bg/exp-contact-transition-wave.svg);
+}
+
+#contact{
+   color: rgb(232, 255, 169);
+   font-size: 19px;
+   font-weight: 500;
+   word-spacing: 1px;
+   letter-spacing: 1px;
+   display: flex;  
+}
+
+#footer-paragraph{
+   width: 60%;
+}
+
+#footer-paragraph{
+   padding: 20px;
+}
+
+#footer-icons {
+   width: 40%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+
+#footer-icons a{
+   text-decoration: none;
+   color: rgb(232, 255, 169);
+}
+
+#footer-icons i {
+   padding: 20px;
+}
+
+.hidden-left{
+   opacity: 0;
+   filter:blur(2px);
+   transform: translateX(-100%);
+   transition: all 2s;
+}
+
+.show-left{
+   opacity: 0.88;
+   filter:blur(0);
+   transform: translateX(0);
+}
+
+.hidden-bottom{
+   opacity: 0;
+   filter:blur(2px);
+   transform: translateY(-50%);
+   transition: all 1.3s;
+}
+
+.show-bottom{
+   opacity: 0.88;
+   filter:blur(0);
+   transform: translateY(0);
+}
+
+.show:hover{
+   opacity: 100%;
+}
