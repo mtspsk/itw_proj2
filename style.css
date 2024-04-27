@@ -72,6 +72,9 @@
    .scroll{
       display: none;
    }
+   #special{
+      display: block;
+   }
 }
 
 @media (max-device-width: 920px) {
@@ -102,8 +105,13 @@
    .scroll{
       display: none;
    }
+   #myDropdown{
+      display: block;
+   }
+   #special{
+      display: block;
+   }
 }
-
 
 #myDropdown{
    display: none;
